@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a8661da0-4972-4231-b555-147e54ff3877" name="2daw" url="http://01.2daw.esvirgua.com/vierport">
+        <fileTransfer rootFolder="/viewport" host="01.2daw.esvirgua.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

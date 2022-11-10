@@ -1,0 +1,104 @@
+/* Juan Daniel Carvajal Montes */
+
+/* Es una técnica que se utiliza para poner los valores CSS que ponen los navegadores por defecto a 0, para
+   evitar que esos valores CSS interfieran con los estilos que queremos aplicar	*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+html{
+	max-width: 1260px;
+	height: 500px;
+}
+
+body{
+	width: 100%;
+	/* ancho de 1260px con un contenedor que tiene un ancho de 1260px como máximo*/
+	border: 1px solid gray;
+	display: flow-root;
+	margin-top: 45px;
+}
+
+/* Elementos dentro del body */
+
+main{
+	background-color: salmon;
+	display: flow-root;
+}
+
+div.footer{
+	height: 100px;
+	background-color: springgreen;
+}
+
+/* Elementos dentro del main */
+
+main > div{
+	margin: 0 1.587301587301587%;
+	/* margen a los lados de 20px con un contenedor que tiene un ancho de 1260px */
+	float: left;
+}
+
+div.contenedor1{
+	width: 61.9047619047619%;
+	/* ancho de 780px con un contenedor que tiene un ancho de 1260px */
+	height: 370px; /* 400px de altura-30px de padding-top */
+	padding: 30px 0.7936507936507937% 0;
+	/* padding a los lados de 10px con un contenedor que tiene un ancho de 1260px */
+	background-color: hotpink;
+}
+
+div.contenedor2{
+	width: 29.36507936507937%;
+	/* ancho de 370px con un contenedor que tiene un ancho de 1260px */
+	height: 350px; /* 400px de altura-50px de padding-top */
+	margin-left: 0;
+	padding: 50px 0 0 2.380952380952381%;
+	/* padding a la izquierda de 30px con un contenedor que tiene un ancho de 1260px */
+	background-color: steelblue;
+}
+
+/* Elementos dentro de contenedor1 */
+
+p{
+	margin-bottom: 4em;
+}
+
+form{
+	padding: 1em 0 1em 8.974358974358974%;
+	/* padding a la izquierda de 70px con un contenedor que tiene un ancho de 780px */
+	border: 1px solid black;
+}
+
+/* Elementos dentro de contenedor2 */
+
+img{
+	width: 40.54054054054054%;
+	/* ancho de 150px con un contenedor que tiene un ancho de 370px */
+	height: auto;
+}
+
+/* Elementos dentro del form */
+
+input{
+	display: block;
+}
+
+input[type="text"], input[type="email"]{
+	width: 69.2090395480226%;
+	/* ancho de 490px con un contenedor que tiene un ancho de 708px */
+	padding-left: 1.412429378531073%;
+	/* padding a la izquierda de 10px con un contenedor que tiene un ancho de 708px */
+}
+
+input[type="submit"]{
+	width: 21.1864406779661%;
+	/* ancho de 150px con un contenedor que tiene un ancho de 708px */
+	height: 2em;
+	background-color: #D8D8D8;
+}

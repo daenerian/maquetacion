@@ -1,0 +1,89 @@
+/* Juan Daniel Carvajal Montes */
+
+/* Es una técnica que se utiliza para poner los valores CSS que ponen los navegadores por defecto a 0, para
+   evitar que esos valores CSS interfieran con los estilos que queremos aplicar	*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body{
+	width: 1260px; /* Ancho total: 1262px = 1260px de ancho + 2px de borde */
+	height: 500px;
+	border: 1px solid gray;
+	display: flow-root;
+	margin-top: 45px;
+}
+
+/* Elementos dentro del body */
+
+main{
+	background-color: salmon;
+	display: flow-root;
+}
+
+div.footer{
+	height: 100px;
+	background-color: springgreen;
+}
+
+/* Elementos dentro del main */
+
+main > div{
+	margin: 0 20px;
+	float: left;
+}
+
+div.contenedor1{
+	width: 780px; /* Ancho total: 800px = 780px de ancho + 20px de padding */
+	height: 370px; /* 400px de altura-30px de padding-top */
+	padding: 30px 10px 0;
+	background-color: hotpink;
+}
+
+div.contenedor2{
+	width: 370px; /* Ancho total: 400px = 370px de ancho + 30px de padding */
+	height: 350px; /* 400px de altura-50px de padding-top */
+	margin-left: 0;
+	padding: 50px 0 0 30px;
+	background-color: steelblue;
+}
+
+/* Elementos dentro de contenedor1 */
+
+p{
+	margin-bottom: 4em;
+}
+
+form{
+	padding: 1em 0 1em 70px;
+	border: 1px solid black;
+}
+
+/* Elementos dentro de contenedor2 */
+
+img{
+	width: 150px; /* Ancho total: 150px */
+	height: auto;
+}
+
+/* Elementos dentro del form */
+
+input{
+	display: block;
+}
+
+input[type="text"], input[type="email"]{
+	width: 490px; /* Ancho total: 500px = 490px de ancho + 10px de padding */
+	padding-left: 10px;
+}
+
+input[type="submit"]{
+	width: 150px; /* Ancho total: 150px */
+	height: 2em;
+	background-color: #D8D8D8;
+}
